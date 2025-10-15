@@ -60,17 +60,6 @@ background-size: cover;
   z-index: 1;
 }
 
-/* Tech badges style (already added but ensure it's here) */
-.tech-badge {
-  display: inline-block;
-  background: rgba(255, 255, 255, 0.2);
-  color: #fff;
-  padding: 2px 8px;
-  border-radius: 4px;
-  margin-right: 5px;
-  font-size: 0.9em;
-}	
-	
 
 /* Optional: Add overlay for better text readability */
 #intro::before {
