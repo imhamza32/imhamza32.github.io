@@ -1,0 +1,123 @@
+{
+  "colorScheme": "light",
+  "fonts": [
+    {
+      "family": "sans-serif",
+      "count": 121
+    },
+    {
+      "family": "Poppins",
+      "count": 65
+    },
+    {
+      "family": "-apple-system",
+      "count": 56
+    },
+    {
+      "family": "BlinkMacSystemFont",
+      "count": 56
+    },
+    {
+      "family": "Segoe UI",
+      "count": 56
+    },
+    {
+      "family": "Roboto",
+      "count": 56
+    },
+    {
+      "family": "Helvetica Neue",
+      "count": 56
+    },
+    {
+      "family": "Arial",
+      "count": 56
+    },
+    {
+      "family": "Noto Sans",
+      "count": 56
+    },
+    {
+      "family": "Apple Color Emoji",
+      "count": 56
+    }
+  ],
+  "colors": {
+    "primary": "#1085E4",
+    "accent": "#77B800",
+    "background": "#FFFFFF",
+    "textPrimary": "#77B800",
+    "link": "#77B800"
+  },
+  "typography": {
+    "fontFamilies": {
+      "primary": "-apple-system",
+      "heading": "Poppins"
+    },
+    "fontStacks": {
+      "body": [
+        "-apple-system",
+        "BlinkMacSystemFont",
+        "Segoe UI",
+        "Roboto",
+        "Helvetica Neue",
+        "Arial",
+        "Noto Sans",
+        "sans-serif",
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        "Noto Color Emoji"
+      ],
+      "heading": [
+        "Poppins",
+        "sans-serif"
+      ],
+      "paragraph": [
+        "Poppins",
+        "sans-serif"
+      ]
+    },
+    "fontSizes": {
+      "h1": "32px",
+      "h2": "32px",
+      "body": "16px"
+    }
+  },
+  "spacing": {
+    "baseUnit": 4,
+    "borderRadius": "5px"
+  },
+  "components": {},
+  "images": {
+    "logo": "https://rapidfunnel.com/wp-content/uploads/2020/10/logo-rapidfunnel-white.webp",
+    "favicon": "https://rapidfunnel.com/wp-content/uploads/2021/02/cropped-favicon-1-32x32.png",
+    "ogImage": "https://rapidfunnel.com/wp-content/uploads/2023/04/hero-img-rapidfunnel-phone-app.webp"
+  },
+  "__framework_hints": [
+    "WordPress 6.7.4"
+  ],
+  "__llm_logo_reasoning": {
+    "selectedIndex": 0,
+    "reasoning": "Strong indicators: header logo linking to homepage, header location, visible, top-left position, src contains logo, class contains logo, src contains brand name \"RapidFunnel\", reasonable size. Score: 116 (clear winner by 78 points)",
+    "confidence": 0.9
+  },
+  "__llm_button_reasoning": {
+    "primary": {
+      "index": -1,
+      "text": "N/A",
+      "reasoning": "LLM failed"
+    },
+    "secondary": {
+      "index": -1,
+      "text": "N/A",
+      "reasoning": "LLM failed"
+    },
+    "confidence": 0
+  },
+  "confidence": {
+    "buttons": 0,
+    "colors": 0,
+    "overall": 0
+  }
+}
