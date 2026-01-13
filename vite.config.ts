@@ -6,12 +6,13 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      // Maps '@' to your source code inside client/src
-      "@": path.resolve(import.meta.dirname, "client", "src"),
-      "@shared": path.resolve(import.meta.dirname, "shared"),
-      "@assets": path.resolve(import.meta.dirname, "attached_assets"),
+      // safe way to resolve paths
+      "@": path.resolve(process.cwd(), "client/src"),
+      "@shared": path.resolve(process.cwd(), "shared"),
+      "@assets": path.resolve(process.cwd(), "attached_assets"),
     },
   },
+  // We removed 'root' so it defaults to the main folder where index.html is
   build: {
     outDir: "dist",
     emptyOutDir: true,
