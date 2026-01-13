@@ -39,7 +39,7 @@ export default function WhiteLabelEngine() {
   }, [isPaused]);
 
   return (
-    <section className="py-24 px-6 bg-[#050505] overflow-hidden">
+    <section id="projects" className="py-20 px-6 bg-[#050505] overflow-hidden">
       <div className="max-w-6xl mx-auto">
         {/* Header: Centered at the top */}
         <div className="text-center mb-20">
@@ -107,7 +107,7 @@ export default function WhiteLabelEngine() {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
-                  transition={{ duration: 1.2, ease: "easeInOut" }}
+                  transition={{ duration: 0.3, ease: "easeInOut" }}
                 />
               </AnimatePresence>
             </div>

@@ -196,72 +196,6 @@ const SenseMinderProject = ({ project }: { project: any }) => {
   );
 };
 
-// RapidFunnel Project Component
-const RapidFunnelProject = ({ project }: { project: any }) => {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  
-  const rapidImages = [
-    rapid1, rapid2, rapid3, rapid4, rapid5, rapid6, rapid7, rapid8, rapid9, rapid10
-  ];
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImageIndex((prev) => (prev + 1) % rapidImages.length);
-    }, 3000);
-    return () => clearInterval(interval);
-  }, []);
-
-  const handleVisitWebsite = () => {
-    window.open("https://rapidfunnel.com/", '_blank', 'noopener,noreferrer');
-  };
-
-  return (
-    <div className="group bg-dark-secondary rounded-3xl overflow-hidden hover:shadow-2xl hover:shadow-blue-500/20 transition-all duration-700 hover:scale-[1.02] hover:-translate-y-2 relative border border-blue-500/30 hover:border-blue-500">
-      <div className="relative h-72 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-t from-dark-secondary via-transparent to-transparent z-10"></div>
-        <div className="relative w-full h-full">
-          {rapidImages.map((image, index) => (
-            <img
-              key={index}
-              src={image}
-              alt={`${project.title} Screenshot ${index + 1}`}
-              className={`absolute inset-0 w-full h-full object-contain bg-black/40 transition-opacity duration-1000 ${
-                index === currentImageIndex ? 'opacity-100' : 'opacity-0'
-              }`}
-            />
-          ))}
-        </div>
-        <div className="absolute top-4 left-4 z-20">
-          <Badge className="bg-blue-600 hover:bg-blue-600/80 animate-pulse">
-            {project.icon}
-            <span className="ml-1 font-semibold">Marketing</span>
-          </Badge>
-        </div>
-      </div>
-      <div className="p-8">
-        <h3 className="text-2xl font-sf-pro font-bold text-white group-hover:text-blue-500 transition-colors duration-300 mb-4">
-          {project.title}
-        </h3>
-        <p className="text-gray-300 font-inter leading-relaxed mb-6">{project.description}</p>
-        <div className="flex flex-wrap gap-2 mb-6">
-          {project.tags.map((tag: string) => (
-            <Badge key={tag} variant="outline" className="border-blue-500/50 text-blue-400 hover:bg-blue-500/10">
-              {tag}
-            </Badge>
-          ))}
-        </div>
-        <Button 
-          onClick={handleVisitWebsite}
-          className="w-full bg-gradient-to-r from-blue-600 to-indigo-600 hover:opacity-90 transition-colors duration-300"
-        >
-          <ExternalLink className="mr-2 h-4 w-4" />
-          Visit Website
-        </Button>
-      </div>
-    </div>
-  );
-};
-
 export default function Projects() {
   const projects = [
     {
@@ -363,17 +297,6 @@ export default function Projects() {
       icon: <Shield className="text-xl" />,
       gradient: "from-emerald-600 to-cyan-600",
       appStoreUrl: "https://apps.apple.com/app/senseminder/id1234567890"
-    },
-    {
-      id: 10,
-      title: "RapidFunnel",
-      description: "The #1 solution for network marketing and MLM, empowering teams with professional prospecting, communication, and training tools branded to their identity.",
-      image: rapid1,
-      tags: ["Swift", "Marketing", "SaaS"],
-      color: "blue-500",
-      icon: <Users className="text-xl" />,
-      gradient: "from-blue-600 to-indigo-600",
-      appStoreUrl: "https://rapidfunnel.com/"
     }
   ];
 
@@ -382,7 +305,7 @@ export default function Projects() {
   };
 
   return (
-    <section id="projects" className="py-24 px-6 bg-gradient-to-b from-dark-bg to-dark-secondary">
+    <section className="py-20 px-6 bg-gradient-to-b from-dark-bg to-dark-secondary">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-20">
           <h2 className="text-5xl md:text-6xl font-sf-pro font-bold mb-6 gradient-text">Featured Apps</h2>
@@ -397,8 +320,6 @@ export default function Projects() {
               <QueBitzProject key={project.id} project={project} />
             ) : project.title === "SenseMinder" ? (
               <SenseMinderProject key={project.id} project={project} />
-            ) : project.title === "RapidFunnel" ? (
-              <RapidFunnelProject key={project.id} project={project} />
             ) : (
             <div
               key={project.id}

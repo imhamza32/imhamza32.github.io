@@ -7,44 +7,33 @@ export default function About() {
   ];
 
   return (
-    <section id="about" className="py-24 px-6 bg-gradient-to-b from-dark-secondary to-dark-bg">
-      <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-20">
+    <section id="about" className="py-20 px-6 bg-gradient-to-b from-dark-secondary to-dark-bg">
+      <div className="max-w-4xl mx-auto text-center">
+        <div className="mb-12">
           <h2 className="text-5xl md:text-6xl font-sf-pro font-bold mb-6 gradient-text">About Me</h2>
-          <p className="text-xl text-gray-300 font-inter">Passionate iOS developer creating impactful mobile experiences</p>
+          <p className="text-xl text-gray-300 font-inter">Senior iOS Architect & Product Engineer</p>
         </div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <div className="space-y-8">
-            <p className="text-lg text-gray-300 leading-relaxed font-inter">
-              I'm a dedicated iOS developer with a passion for creating innovative mobile applications that solve real-world problems. With expertise in Swift, SwiftUI, and modern iOS frameworks, I specialize in building intelligent, user-friendly apps that enhance people's daily lives.
+        <div className="space-y-8 bg-dark-card/40 p-8 md:p-16 rounded-[2.5rem] border border-electric-blue/20 shadow-2xl relative overflow-hidden group">
+          <div className="absolute top-0 right-0 -mt-10 -mr-10 w-40 h-40 bg-electric-blue/10 blur-[80px] rounded-full"></div>
+          
+          <div className="max-w-3xl mx-auto space-y-8 text-center">
+            <p className="text-xl text-gray-300 leading-relaxed font-inter relative z-10">
+              I specialize in engineering scalable iOS architectures. My flagship achievement is a <span className="text-electric-blue font-semibold">White-Label Engine</span> that powers 10+ enterprise apps from a single codebase, reducing client deployment time by 90%.
             </p>
             
-            <p className="text-lg text-gray-300 leading-relaxed font-inter">
-              My portfolio includes <span className="text-electric-blue font-semibold">Social Boom</span>, a revolutionary digital business card platform, <span className="text-electric-blue font-semibold">Kameti</span> for committee management, and <span className="text-electric-blue font-semibold">Kapture</span>, a creative social platform for photographers. I focus on combining cutting-edge technology with elegant design.
+            <p className="text-xl text-gray-300 leading-relaxed font-inter relative z-10">
+              Beyond code, I bring a product mindset. From <span className="text-electric-blue font-semibold">Banking-grade security</span> and <span className="text-electric-blue font-semibold">HIPAA-compliant HealthTech</span> to high-traffic <span className="text-electric-blue font-semibold">Media Streaming</span>, I build apps that are stable (99.9% crash-free), secure, and engaging.
             </p>
-            
-            <div className="grid grid-cols-2 gap-8 pt-8">
-              {stats.map((stat) => (
-                <div key={stat.label} className="text-center">
-                  <div className="text-4xl font-sf-pro font-bold gradient-text mb-2">{stat.value}</div>
-                  <div className="text-gray-400 font-inter">{stat.label}</div>
-                </div>
-              ))}
-            </div>
           </div>
           
-          <div className="relative">
-            {/* Developer workspace with code on screen */}
-            <img
-              src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600"
-              alt="iOS Developer workspace with code and devices"
-              className="rounded-3xl shadow-2xl w-full"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-electric-blue/20 to-transparent rounded-3xl"></div>
-            <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-gradient-to-br from-electric-blue to-cyan-bright rounded-full flex items-center justify-center animate-glow-pulse">
-              <div className="text-white text-2xl">⚡</div>
-            </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pt-12 relative z-10 border-t border-white/5">
+            {stats.map((stat) => (
+              <div key={stat.label} className="text-center">
+                <div className="text-4xl font-sf-pro font-bold gradient-text mb-2">{stat.value}</div>
+                <div className="text-gray-400 font-inter text-sm">{stat.label}</div>
+              </div>
+            ))}
           </div>
         </div>
       </div>

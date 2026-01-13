@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Download, Smartphone } from "lucide-react";
+import profileImg from "@assets/profile_1768274891657.png";
 
 export default function Hero() {
   const scrollToProjects = () => {
@@ -9,43 +10,48 @@ export default function Hero() {
     }
   };
 
-  const downloadResume = () => {
-    // Implementation for resume download
-    console.log("Download resume clicked");
-  };
-
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative hero-gradient">
+    <section id="home" className="min-h-screen flex items-center justify-center relative hero-gradient overflow-hidden">
+      {/* Tech Grid Background */}
+      <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle, #3b82f6 1px, transparent 1px)', backgroundSize: '30px 30px' }}></div>
       <div className="absolute inset-0 bg-gradient-to-br from-electric-blue/10 to-transparent"></div>
       
-      <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
-        <div className="mb-8 animate-float">
-          {/* Professional profile image placeholder */}
-          <div className="w-48 h-48 mx-auto rounded-full bg-gradient-to-br from-electric-blue to-cyan-bright p-1 animate-glow-pulse">
-            <div className="w-full h-full rounded-full bg-dark-secondary flex items-center justify-center">
-              <div className="text-6xl text-electric-blue">👨‍💻</div>
+      <div className="relative z-10 text-center px-6 max-w-3xl mx-auto space-y-8">
+        <div className="animate-float relative">
+          {/* Professional profile image with Electric Blue Glow */}
+          <div className="absolute inset-0 bg-electric-blue/20 blur-[60px] rounded-full scale-150"></div>
+          <div className="w-48 h-48 mx-auto rounded-full bg-gradient-to-br from-electric-blue to-cyan-bright p-1 animate-glow-pulse relative z-10 overflow-hidden">
+            <div className="w-full h-full rounded-full bg-[#1a1a1a] border-4 border-[#1a1a1a] overflow-hidden">
+              <img 
+                src={profileImg} 
+                alt="Munib Hamza - Senior iOS Architect" 
+                className="w-full h-full object-cover rounded-full"
+              />
             </div>
           </div>
         </div>
         
-        <h1 className="text-4xl md:text-6xl font-sf-pro font-bold mb-4 animate-slide-up">
-          <span className="text-white">Hi, I'm </span>
-          <span className="gradient-text glow-text">Munib Hamza</span>
-        </h1>
+        <div className="space-y-4">
+          <h1 className="text-3xl md:text-5xl font-sf-pro font-bold animate-slide-up text-white">
+            Architecting Scalable Mobile Experiences
+          </h1>
+          
+          <h2 className="text-xl md:text-3xl font-sf-pro font-bold animate-slide-up text-blue-500" style={{ animationDelay: '0.1s', textShadow: '0 0 10px rgba(59, 130, 246, 0.3)' }}>
+            Senior iOS Architect & Product Engineer
+          </h2>
+        </div>
         
-        <h2 className="text-3xl md:text-5xl font-sf-pro font-bold mb-6 animate-slide-up" style={{ animationDelay: '0.1s' }}>
-          <span className="gradient-text glow-text">iOS Developer</span>
-        </h2>
+        <div className="space-y-6">
+          <p className="text-base md:text-lg text-gray-400 font-inter animate-slide-up" style={{ animationDelay: '0.2s' }}>
+            Specializing in White-Label Engines, HIPAA-Compliant HealthTech, and High-Performance Enterprise Apps.
+          </p>
+          
+          <p className="text-sm md:text-base text-cyan-bright font-inter animate-slide-up" style={{ animationDelay: '0.3s' }}>
+            📱 45+ Published iOS Apps | 📈 1M+ Downloads | 🏢 Based in Ilmenau, Thuringia Germany
+          </p>
+        </div>
         
-        <p className="text-xl md:text-2xl text-gray-300 mb-4 font-inter animate-slide-up" style={{ animationDelay: '0.2s' }}>
-          Building innovative mobile experiences with Swift & SwiftUI
-        </p>
-        
-        <p className="text-lg text-cyan-bright mb-12 font-inter animate-slide-up" style={{ animationDelay: '0.3s' }}>
-          📱 45+ Published iOS Apps | 📈 1M+ Downloads | 🏢 Based in Ilmenau, Thuringia Germany
-        </p>
-        
-        <div className="flex flex-col sm:flex-row gap-6 justify-center animate-slide-up" style={{ animationDelay: '0.6s' }}>
+        <div className="flex flex-col sm:flex-row gap-6 justify-center animate-slide-up pt-4" style={{ animationDelay: '0.6s' }}>
           <Button
             onClick={scrollToProjects}
             className="px-12 py-4 bg-electric-blue hover:bg-cyan-bright text-white font-semibold rounded-full transition-all duration-300 transform hover:scale-105 animate-glow-pulse font-inter"
@@ -53,14 +59,20 @@ export default function Hero() {
             <Smartphone className="mr-2 h-5 w-5" />
             View My Apps
           </Button>
-          <Button
-            onClick={downloadResume}
-            variant="outline"
-            className="px-12 py-4 border-2 border-electric-blue text-electric-blue hover:bg-electric-blue hover:text-white font-semibold rounded-full transition-all duration-300 font-inter"
+          <a 
+            href="/attached_assets/resume_1768274895427.pdf" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            download="Munib_Hamza_Resume"
           >
-            <Download className="mr-2 h-5 w-5" />
-            Download Resume
-          </Button>
+            <Button
+              variant="outline"
+              className="px-12 py-4 border-2 border-electric-blue text-electric-blue hover:bg-electric-blue hover:text-white font-semibold rounded-full transition-all duration-300 font-inter w-full sm:w-auto"
+            >
+              <Download className="mr-2 h-5 w-5" />
+              Download Resume
+            </Button>
+          </a>
         </div>
       </div>
       

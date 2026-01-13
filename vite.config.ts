@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react";
 import path from "path";
 import { fileURLToPath } from "url";
 
-// Universal fix for directory paths (Works on Windows/Linux/GitHub)
+// Universal path fix (Works on Mac, Windows, and GitHub Servers)
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
@@ -16,12 +16,12 @@ export default defineConfig({
       "@assets": path.resolve(__dirname, "attached_assets"),
     },
   },
-  // Crucial: Tells Vite your website source is inside 'client'
+  // Tells Vite the app source is in 'client'
   root: path.resolve(__dirname, "client"),
   build: {
-    // Crucial: Puts the finished website in the main 'dist' folder
+    // CRITICAL: Builds directly to 'dist' (not dist/public) for GitHub Pages
     outDir: path.resolve(__dirname, "dist"),
     emptyOutDir: true,
   },
-  base: "./", // Ensures images/links work on GitHub Pages
+  base: "./", // Ensures links work correctly
 });

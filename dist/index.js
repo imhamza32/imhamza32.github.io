@@ -129,15 +129,15 @@ var vite_config_default = defineConfig({
       "@assets": path.resolve(__dirname, "attached_assets")
     }
   },
-  // Crucial: Tells Vite your website source is inside 'client'
+  // Tells Vite the app source is in 'client'
   root: path.resolve(__dirname, "client"),
   build: {
-    // Crucial: Puts the finished website in the main 'dist' folder
+    // CRITICAL: Builds directly to 'dist' (not dist/public) for GitHub Pages
     outDir: path.resolve(__dirname, "dist"),
     emptyOutDir: true
   },
   base: "./"
-  // Ensures images/links work on GitHub Pages
+  // Ensures links work correctly
 });
 
 // server/vite.ts
