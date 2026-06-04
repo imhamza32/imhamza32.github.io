@@ -12,7 +12,7 @@ export default function Footer() {
     <footer className="py-12 px-6 bg-dark-bg border-t border-electric-blue/20">
       <div className="max-w-6xl mx-auto text-center">
         <div className="mb-8">
-          <h3 className="font-sf-pro text-2xl font-bold gradient-text mb-4">Senior iOS Architect</h3>
+          <h3 className="font-sf-pro text-2xl font-bold gradient-text mb-4">iOS Engineer</h3>
           <div className="flex justify-center space-x-8">
             {socialLinks.map((link) => (
               <a

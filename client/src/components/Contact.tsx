@@ -121,7 +121,7 @@ export default function Contact() {
                 Available for:
               </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {["Enterprise Architecture", "White-Label Systems", "HealthTech & HIPAA", "iOS Consultancy"].map((service) => (
+                {["Full-Time iOS Engineering Roles", "White-Label Systems", "HealthTech & Data Compliance (HIPAA/GDPR)", "On-Site / Hybrid / Remote Collaboration"].map((service) => (
                   <div key={service} className="flex items-center bg-dark-bg/50 p-4 rounded-xl border border-electric-blue/10">
                     <CheckCircle className="text-electric-blue mr-3 h-4 w-4 flex-shrink-0" />
                     <span className="text-gray-300 text-sm font-inter">{service}</span>

@@ -3,7 +3,7 @@ I need to perform a complete "Senior Architect" overhaul of the entire website. 
 1. HERO SECTION (Upgrade to Senior Branding):
    - **Headline:** Change to **"Architecting Scalable Mobile Experiences"**.
    - **Sub-headline:** Change to **"Senior iOS Architect & Product Engineer"**.
-   - **Tagline:** "Specializing in White-Label Engines, HIPAA-Compliant HealthTech, and High-Performance Enterprise Apps."
+   - **Tagline:** "Building stable, high-performance native iOS applications. Specializing in legacy modernization, robust data management, and secure APIs."
    - **Visuals:** Add a subtle "Tech Grid" or dot pattern background. Add a professional "Electric Blue" glow behind the avatar.
 
 2. ABOUT SECTION (Content & Layout Fix):
@@ -31,7 +31,7 @@ I need to perform a complete "Senior Architect" overhaul of the entire website. 
 
 5. CONTACT SECTION (Fix Data & Design):
    - **Data:** Update Email to `hamzamunib32@gmail.com` and LinkedIn to `linkedin.com/in/hamzamunib32`.
-   - **"Available For" Tags:** Change to: "Enterprise Architecture", "White-Label Systems", "HealthTech & HIPAA", "iOS Consultancy".
+   - **"Available For" Tags:** Change to: "Full-Time iOS Engineering Roles", "White-Label Systems", "HealthTech & Data Compliance (HIPAA/GDPR)", "On-Site / Hybrid / Remote Collaboration".
    - **Design:** Change input fields to have a Dark Background (#1a1a1a) with a subtle border. Make the "Send" button have a strong Electric Blue glow.
 
 6. FOOTER (Modernize):

@@ -24,7 +24,7 @@ export default function Hero() {
             <div className="w-full h-full rounded-full bg-[#1a1a1a] border-4 border-[#1a1a1a] overflow-hidden">
               <img 
                 src={profileImg} 
-                alt="Munib Hamza - Senior iOS Architect" 
+                alt="Munib Hamza - iOS Engineer" 
                 className="w-full h-full object-cover rounded-full"
               />
             </div>
@@ -37,17 +37,17 @@ export default function Hero() {
           </h1>
           
           <h2 className="text-xl md:text-3xl font-sf-pro font-bold animate-slide-up text-blue-500" style={{ animationDelay: '0.1s', textShadow: '0 0 10px rgba(59, 130, 246, 0.3)' }}>
-            Senior iOS Architect & Product Engineer
+            iOS Engineer | Swift & Objective-C
           </h2>
         </div>
         
         <div className="space-y-6">
           <p className="text-base md:text-lg text-gray-400 font-inter animate-slide-up" style={{ animationDelay: '0.2s' }}>
-            Specializing in White-Label Engines, HIPAA-Compliant HealthTech, and High-Performance Enterprise Apps.
+            Building stable, high-performance native iOS applications. Specializing in legacy modernization, robust data management, and secure APIs.
           </p>
           
           <p className="text-sm md:text-base text-cyan-bright font-inter animate-slide-up" style={{ animationDelay: '0.3s' }}>
-            📱 45+ Published iOS Apps | 📈 1M+ Downloads | 🏢 Based in Ilmenau, Thuringia Germany
+            📱 4.5+ Years Experience | 📈 1M+ Downloads | 🏢 Based in Ilmenau, Thuringia Germany
           </p>
         </div>
         
